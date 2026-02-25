@@ -1,4 +1,4 @@
-# Mjaer-nettside
+# Mjær-nettside
 
 Respekter hverandres område.
 
