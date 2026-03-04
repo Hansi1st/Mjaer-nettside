@@ -3,45 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EngangsGrill AS</title>
+    <title>Løvdahl Engangsgriller</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Velkommen til EngangsGrill AS</h1>
+
+<header>
+    <div class="container">
+        <div class="logo">🔥 Løvdahl Engangsgriller</div>
         <nav>
-            <ul>
-                <li><a href="#om-oss">Om oss</a></li>
-                <li><a href="#produkter">Produkter</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-            </ul>
+            <a href="#produkter">Produkter</a>
+            <a href="#om">Om oss</a>
+            <a href="#kontakt">Kontakt</a>
         </nav>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <section id="om-oss">
-            <h2>Om oss</h2>
-            <p>EngangsGrill AS tilbyr kvalitetsgriller som er perfekte for tur, piknik eller strandliv. Enkel i bruk og alltid klar til grilling!</p>
-        </section>
+<section class="hero">
+    <div class="container">
+        <h1>Grilling gjort enkelt</h1>
+        <p>Klar på 5 minutter. Perfekt for tur, strand og festival.</p>
+        <a href="#produkter" class="btn">Utforsk modellene</a>
+    </div>
+</section>
 
-        <section id="produkter">
-            <h2>Våre produkter</h2>
-            <ul>
-                <li>Engangsgrill liten – 1 person</li>
-                <li>Engangsgrill medium – 2-3 personer</li>
-                <li>Engangsgrill stor – 4-5 personer</li>
-            </ul>
-            <p>Alle våre griller er miljøvennlige og laget for trygg bruk utendørs.</p>
-        </section>
+<section id="produkter" class="section">
+    <div class="container">
+        <h2>Våre modeller</h2>
 
-        <section id="kontakt">
-            <h2>Kontakt oss</h2>
-            <p>Har du spørsmål eller ønsker å bestille? Send oss en e-post på <a href="mailto:post@engangsgrill.no">post@engangsgrill.no</a> eller ring 123 45 678.</p>
-        </section>
-    </main>
+        <div class="grid">
+            <div class="card">
+                <h3>Mini</h3>
+                <p>Kompakt og lett. For 1 person.</p>
+                <p class="price">49 kr</p>
+                <button>Bestill nå</button>
+            </div>
 
-    <footer>
-        <p>&copy; 2026 EngangsGrill AS – Alle rettigheter forbeholdt</p>
-    </footer>
+            <div class="card">
+                <h3>Standard</h3>
+                <p>Vår mest populære modell. 2–3 personer.</p>
+                <p class="price">79 kr</p>
+                <button>Bestill nå</button>
+            </div>
+
+            <div class="card">
+                <h3>Familie</h3>
+                <p>Ekstra stor grillflate. 4–5 personer.</p>
+                <p class="price">109 kr</p>
+                <button>Bestill nå</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="om" class="section dark">
+    <div class="container">
+        <h2>Om oss</h2>
+        <p>
+            Løvdahl Engangsgriller leverer moderne og brukervennlige griller
+            utviklet for norske forhold. Vi kombinerer kvalitet, design
+            og enkel bruk – så du kan fokusere på det viktigste: maten.
+        </p>
+    </div>
+</section>
+
+<section id="kontakt" class="section">
+    <div class="container">
+        <h2>Kontakt</h2>
+        <p>Email: post@lovdahlengangsgriller.no</p>
+        <p>Telefon: 123 45 678</p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Løvdahl Engangsgriller</p>
+    </div>
+</footer>
+
 </body>
 </html>
