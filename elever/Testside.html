@@ -2,14 +2,121 @@
 <html lang="no">
 <head>
 <meta charset="UTF-8">
-<title>Elevside</title>
+<title>Inspirasjonsside</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #7c3aed, #2563eb);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Kort-seksjon */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* Fancy knapp */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #1e40af;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
 </head>
+
 <body>
 
-<h1>Dette er min side</h1>
-<p>Skriv noe om deg selv.</p>
+<header>
+    <h1>Velkommen!</h1>
+    <p>Dette er en inspirasjonsside for elevprosjekter 🚀</p>
+    <button onclick="visMelding()">Trykk på meg</button>
+</header>
 
-<a href="../index.html">Tilbake</a>
+<section class="container">
+    <div class="card">
+        <h3>Om meg</h3>
+        <p>Her kan elevene skrive om seg selv.</p>
+    </div>
+
+    <div class="card">
+        <h3>Prosjekter</h3>
+        <p>Vis frem arbeid og kreative ideer.</p>
+    </div>
+
+    <div class="card">
+        <h3>Kontakt</h3>
+        <p>Legg inn e-post eller kontaktinfo.</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Min Skole
+</footer>
+
+<script>
+function visMelding() {
+    alert("Så bra at du tester nettsiden! 🎉");
+}
+</script>
 
 </body>
 </html>
