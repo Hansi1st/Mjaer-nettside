@@ -61,23 +61,3 @@
 </body>
 </html>
 
-t = turtle.Turtle()
-t.speed(0)
-t.width(3)
-print("KONTROLLER: Piler = Tegn | R = Rød | G = Grønn | B = Blå | C = Rens")
-
-# Funksjoner for bevegelse
-def opp(): t.setheading(90); t.forward(20)
-def ned(): t.setheading(270); t.forward(20)
-def venstre(): t.setheading(180); t.forward(20)
-def hoyre(): t.setheading(0); t.forward(20)
-
-
-# Lytt etter tastetrykk
-screen = turtle.Screen()
-screen.listen()
-screen.onkey(opp, "Up")
-screen.onkey(ned, "Down")
-screen.onkey(venstre, "Left")
-screen.onkey(hoyre, "Right")
-
