@@ -6,6 +6,27 @@
 </head>
 <style>
 
+/* bokser */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgb(33, 245, 79);
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(16, 177, 29, 0.08);
+    text-align:center;
+    transition:0.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
 header{
     background: linear-gradient(to bottom,#02f574,#000000);
     color:white;
