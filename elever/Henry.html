@@ -5,6 +5,7 @@
     hi my name is henry
     and im curently trying to make a scroling 
     funkcion 
+    eror it did not worke
 
 
 <!DOCTYPE html>
@@ -84,7 +85,7 @@ body{
 
 </body>
 </html>
-
+ </
 
 <p1>Dette er tekst som jeg vil endre på etter hvert
 
@@ -95,4 +96,73 @@ Det blir spennende å se om denne teksten får mellomrom når jeg trykker enter 
 Nå bør det være litt mellomrom
 Takk for meg</p1>
 
+<style>
+    
+/* bokser */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
 
+.card{
+    background:rgb(222, 139, 31);
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(247, 226, 67);
+    text-align:center;
+    transition:0.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
+header{
+    background: linear-gradient(to bottom,#fcfc03,#6560e0);
+    color:white;
+    padding:60px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+body{
+    margin:0;
+    font-family: system-ui, Arial, sans-serif;
+    background:#6560e0;
+}
+</style>
+
+<header> 
+<h1> Velkommen!</h1>
+<p> Jeg er Henry</p>
+</header>
+
+<body>
+
+</stile>
+<div class="grid">
+
+    <div class="card">
+        <h3>Om meg</h3>
+        <p>Jeg liker å spille spill og programmere.</p>
+    </div>
+
+    <div class="card">
+        <h3>Favorittspill</h3>
+        <p>War thunder</p>
+    </div>
+
+     <div class="card">
+        <h3>links</h3>
+        <p><a href="../index.html"> Tilbake</a></p>
+       
+    </div>
+
+
+
+
+</body>
+</html>
