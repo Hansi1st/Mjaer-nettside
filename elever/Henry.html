@@ -15,3 +15,70 @@
 
 </body>
 </html>
+
+/* bokser */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgb(33, 245, 79);
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(33, 245, 79);
+    text-align:center;
+    transition:0.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px rgba(0,0,0,0.12);
+}
+
+header{
+    background: linear-gradient(to bottom,#21f54f,#011b06);
+    color:white;
+    padding:60px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+body{
+    margin:0;
+    font-family: system-ui, Arial, sans-serif;
+    background:#011b06;
+}
+</style>
+
+<header> 
+<h1> Velkommen!</h1>
+<p> Jeg er Nikodem.</p>
+</header>
+
+<body>
+
+</stile>
+<div class="grid">
+
+    <div class="card">
+        <h3>Om meg</h3>
+        <p>Jeg liker å spille spill og programmere.</p>
+    </div>
+
+    <div class="card">
+        <h3>Favorittspill</h3>
+        <p>Minecraft og Subnautica.</p>
+    </div>
+
+     <div class="card">
+        <h3>links</h3>
+        <p><a href="../index.html"> Tilbake</a></p>
+        <p><a href="https://arcade.makecode.com/S61774-18658-97040-43198">makecode spill</a></p>
+        <p><a href="https://playcanv.as/p/mQhkZ7UL/">first person parkour (WIP)</a></p>
+    </div>
+
+</body>
+</html>
