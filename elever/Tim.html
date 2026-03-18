@@ -25,5 +25,31 @@
 
 <img src="https://ai.enebakkskolen.no/wp-content/uploads/2024/09/hansilator20001.png" alt="Hansilator">
 
-<p> jeg mistet osten ):
+
   
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Bilde teller</title>
+</head>
+<body>
+
+<p>Antall klikk: <span id="counter">0</span></p>
+
+<img id="clickImage" src="https://via.placeholder.com/150" alt="Klikk meg" style="cursor: pointer;">
+
+<script>
+  let count = 0;
+
+  const image = document.getElementById("clickImage");
+  const counterText = document.getElementById("counter");
+
+  image.addEventListener("click", function() {
+    count++;
+    counterText.textContent = count;
+  });
+</script>
+
+</body>
+</html>
