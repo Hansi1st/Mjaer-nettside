@@ -17,7 +17,7 @@ body{
 
     padding: 20px;
 
-    min-height: 200vh; /* bare for testing scroll */
+    min-height: 200vh;
 }
 
 /* toppbanner */
@@ -33,7 +33,6 @@ header{
     align-items: center;
 
     min-height: 300px;
-
     position: relative;
 }
 
@@ -50,7 +49,7 @@ header *{
 
 header h1{
     font-size: 3rem;
-    margin-left: 75px;  /* flytter teksten litt til høyre */
+    margin-left: 75px;
 }
 
 header img{
@@ -58,6 +57,7 @@ header img{
     border-radius: 10px;
 }
 
+/* RAMME */
 .ramme{
     position: fixed;
     top: 0;
@@ -69,6 +69,33 @@ header img{
     z-index: 9999;
 
     object-fit: fill;
+}
+
+/* 🔵 GLASS-KNAPP (Tilbake) */
+.tilbake-knapp{
+    display: inline-block;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    margin-left: 75px;
+    margin-top: 20px;
+
+    transition: 0.2s;
+}
+
+/* ✨ HOVER EFFEKT */
+.tilbake-knapp:hover{
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
 }
 </style>
 
@@ -84,7 +111,8 @@ header img{
 
 <p>Hei.</p>
 
-<a href="../index.html">Tilbake</a>
+<!-- 🔵 NY GLASS-KNAPP -->
+<a href="../index.html" class="tilbake-knapp">Tilbake</a>
 
 </body>
 </html>
