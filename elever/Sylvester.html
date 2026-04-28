@@ -16,7 +16,6 @@ body{
     background-position: top left;
 
     padding: 20px;
-
     min-height: 200vh;
 }
 
@@ -71,13 +70,12 @@ header img{
     object-fit: fill;
 }
 
-/* kul knapp som er tilbake */
+/* tilbake-knapp */
 .tilbake-knapp{
     display: inline-block;
 
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 
     color: white;
     padding: 10px 20px;
@@ -96,6 +94,42 @@ header img{
     background: rgba(255, 255, 255, 0.25);
     transform: scale(1.05);
 }
+
+/* bilde-knapp */
+.bilde-knapp{
+    position: relative;
+    display: inline-block;
+
+    margin-left: 75px;
+    margin-top: 20px;
+
+    border-radius: 10px;
+    overflow: hidden;
+
+    transition: 0.2s;
+}
+
+.bilde-knapp img{
+    width: 220px;
+    display: block;
+}
+
+.bilde-knapp span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+
+    text-shadow: 0 3px 8px rgba(0,0,0,0.7);
+}
+
+.bilde-knapp:hover{
+    transform: scale(1.05);
+}
 </style>
 
 </head>
@@ -110,8 +144,13 @@ header img{
 
 <p>Hei.</p>
 
-<!-- 🔵 NY GLASS-KNAPP -->
+<!-- tilbake -->
 <a href="../index.html" class="tilbake-knapp">Tilbake</a>
+
+<a href="https://arcade.makecode.com/S89509-28819-34448-02273" class="bilde-knapp">
+    <img src="../Bilder/Laburint.png" alt="Gå videre">
+    <span>Gå videre</span>
+</a>
 
 </body>
 </html>
