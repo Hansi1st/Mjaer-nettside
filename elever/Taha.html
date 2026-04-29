@@ -1,65 +1,119 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8">
-<title>Void INC files</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Void INC files</title>
 
-<style>
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-img {
-  height: 50%;
-  width: 50%;
-}
-#6767 {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6SoePPooEzduHUoCJXs7Xxho8Slvq9iMBb_Q-Ve-HJ8ApU_rnS7HP6KElFOmeuhk6zEJ1HQjgqIcXv_JZ0toZXiM_WzF8kgAhFwg7Dre&s=10);
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #111;
+      color: white;
+      margin: 0;
+    }
 
-}
-.box {
-  display: block;
-  width: 250px;
-  margin: 10px auto;
-  padding: 15px;
-  background-color: #222;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: 0.2s;
-}
+    img {
+      width: 50%;
+      height: auto;
+      max-width: 400px;
+    }
 
-.box:hover {
-  background-color: #444;
-  transform: scale(1.05);
-}
-</style>
+    #autumn {
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6SoePPooEzduHUoCJXs7Xxho8Slvq9iMBb_Q-Ve-HJ8ApU_rnS7HP6KElFOmeuhk6zEJ1HQjgqIcXv_JZ0toZXiM_WzF8kgAhFwg7Dre&s=10);
+      background-size: cover;
+    }
 
+    .box {
+      display: block;
+      width: 250px;
+      margin: 10px auto;
+      padding: 15px;
+      background-color: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .box:hover {
+      background-color: #444;
+      transform: scale(1.05);
+    }
+
+    button {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+
+    section {
+      margin: 20px;
+    }
+  </style>
+
+  <script>
+    function endreFarge() {
+      document.body.style.backgroundColor = "darkblue";
+    }
+
+    let count = 0;
+    function add() {
+      count++;
+      document.getElementById("count").textContent = count;
+    }
+  </script>
 </head>
 
 <body>
 
-<h1>Hei! Jeg er Taha og Jujutsu kaisen er den beste serien i hele verda</h1>
-<p>Jeg er også en større JJK fan enn GojoMaster6969 aka Joachim.</p>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6SoePPooEzduHUoCJXs7Xxho8Slvq9iMBb_Q-Ve-HJ8ApU_rnS7HP6KElFOmeuhk6zEJ1HQjgqIcXv_JZ0toZXiM_WzF8kgAhFwg7Dre&s=10">
-<a class="box" href="https://makecode.com/_K6RfsM6E9coY">Play my game</a>
+  <header>
+    <h1>Hei! Jeg er Taha og Jujutsu Kaisen er den beste serien i hele verden</h1>
+    <p>Jeg er også en større JJK fan enn GojoMaster6969 aka Joachim.</p>
+  </header>
 
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Noah.html">Noah sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Oliver.html">Oliver sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Sylvester.html">Sylvester sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Theo.html">Theo sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Tim.html">Tim sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Lucas.html">Lucas sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Theodor.html">Theodor sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Edward.html">Edward sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Nikodem.html">Nikodem sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Joachim.html">Joachim sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Kristoffer.html">Kristoffer sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Henry.html">Henry sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Autumn.html" id="6767":>Autumn sin side</a>
-<a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Hansi.html">den beste matte læreren sin side</a>
+  <main>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN6SoePPooEzduHUoCJXs7Xxho8Slvq9iMBb_Q-Ve-HJ8ApU_rnS7HP6KElFOmeuhk6zEJ1HQjgqIcXv_JZ0toZXiM_WzF8kgAhFwg7Dre&s=10" alt="Bilde fra Jujutsu Kaisen">
 
-<a class="box" href="https://vikingpedia-martin0.webnode.page">Min og martin sin side</a>
+    <!-- Interaktivitet -->
+    <div>
+      <button onclick="endreFarge()">Endre bakgrunn</button>
+    </div>
 
-</body>
-</html>
+    <p id="count">0</p>
+    <button onclick="add()">Klikk meg</button>
+
+    <!-- Om meg -->
+    <section>
+      <h2>Om meg</h2>
+      <p>
+        Jeg heter Taha og jeg liker å programmere og lage spill. 
+        Jeg liker spesielt Jujutsu Kaisen fordi karakterene og kampene er kule.
+      </p>
+    </section>
+
+    <!-- Lenker -->
+    <nav>
+      <a class="box" href="https://makecode.com/_K6RfsM6E9coY">Play my game</a>
+
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Noah.html">Noah sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Oliver.html">Oliver sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Sylvester.html">Sylvester sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Theo.html">Theo sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Tim.html">Tim sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Lucas.html">Lucas sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Theodor.html">Theodor sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Edward.html">Edward sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Nikodem.html">Nikodem sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Joachim.html">Joachim sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Kristoffer.html">Kristoffer sin side</a>
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Henry.html">Henry sin side</a>
+
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Autumn.html" id="autumn">Autumn sin side</a>
+
+      <a class="box" href="https://hansi1st.github.io/Mjaer-nettside/elever/Hansi.html">den beste matte læreren sin side</a>
+      <a class="box" href="https://vikingpedia-martin0.webnode.page">Min og martin sin side</a>
+    </nav>
