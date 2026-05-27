@@ -118,15 +118,19 @@ header img{
 
 .bilde-knapp span{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     color: white;
     font-size: 1.3em;
     font-weight: bold;
 
     text-shadow: 0 3px 8px rgba(0,0,0,0.7);
+
+    pointer-events: none;
 }
 
 .bilde-knapp:hover{
